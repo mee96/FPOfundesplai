@@ -1,0 +1,44 @@
+ @import 'vueling-css-20-3.html';
+
+ .segona p {
+     color: palevioletred;
+     font-size: 20px;
+     background-color: rgb(171, 224, 218);
+     border-radius: 10px;
+    
+ }
+
+ .header {
+     display: flex;
+     direction: row;
+     justify-content: space-around;
+     background-color: rgb(99, 233, 217);
+ }
+
+ .primera {
+   display: flex;
+   justify-content: center;
+ }
+
+ .segona{
+   display: flex;
+   direction: column;
+   justify-content: center;
+    gap: 20px;
+    
+ }
+
+
+ .buscador {
+    
+   display: flex;
+   direction: column;
+   justify-content: space-around;
+   gap: 15px;
+   background-color: rgb(99, 233, 217);
+   border-radius: 15px;
+   padding: 2px 30px;
+   
+   
+ }
+ 

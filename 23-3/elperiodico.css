@@ -41,6 +41,9 @@ header {
             margin: 0;
             
         }
+        @media (max-width: 800px) {
+      display: none;
+    }
         
     }
 }
@@ -54,6 +57,10 @@ main {
         h4 {
             color: rgb(134, 137, 130);
         }
+    
+        @media (max-width: 1000px) {
+        flex-direction: column; 
+    }
 }
 
 .left-column {
@@ -75,3 +82,23 @@ main img {
 
 
 
+/*  ejercisisi media queris, que lo que estigue en rows estigue
+en columns y 
+
+-si el viewpoert es mayor de 1500 tiene que haber publicidad en los lados si no sin publicidad y si llega a 800 quitarle la navbar */
+
+
+
+.ads-column {
+    display: none; 
+    background-color: #f0f0f0;
+    color: #888;
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+
+    @media (min-width: 1000px) {
+        display: block; 
+    }
+}

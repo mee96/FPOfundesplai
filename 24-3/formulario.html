@@ -1,0 +1,92 @@
+<!-- REsponsive--header, footer formulari : nombre, apellido,sexo radiobutton,  pasword dos pasword, fecha nacimiento, chekboxes con lorem ipsum, descvripcion, bottons: submit clear  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <header>
+    <div class="header-container">
+        <div class="header-item header-menu">
+            <img src="/img/pusheen-sleep.gif" alt="Menú" class="icon">
+        </div>
+
+        <div class="header-item header-title">
+            <h1>Formulario registro</h1>
+        </div>
+
+        <div class="header-item header-logo">
+            <img src="/img/pusheen-gaming-me-as-fweak.gif" alt="Logo Cuqui" class="pusheen">
+        </div>
+    </div>
+</header>
+
+
+     <main>
+        <div class="contenedor-forms">
+        <div class="formulario">
+            <form class="formulario1" action="">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="lastname">Apellido:</label>
+                <input type="text" id="lastname" name="lastname"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="pwd">Contraseña:</label><br>
+                <input type="password" id="pwd" name="pwd"><br><br>
+                <label for="pwd">Confirmar Contraseña:</label><br>
+                <input type="password" id="pwd" name="pwd"><br><br>
+
+
+                  
+            </form>
+
+        </div>
+        <div>
+            <form class="formulario2" action="   ">
+                <p>Sexo</p>
+                <label></label>
+                <input type="radio" id="female" name="gender" value="female" >Mujer
+                <label></label>
+                <input type="radio" id="male" name="gender" value="male"> Otros
+                <label></label>
+                <input type="radio" id="male" name="gender" value="male">Hombre<br><br>
+
+                <label for="birthday">Fecha de nacimiento:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+
+                <input type="checkbox" id="lorem" name="lorem" value="lorem">
+                <label for="lorem"> Checkbox-1</label><br>
+                <input type="checkbox" id="lorem-2" name="lorem-2" value="lorem-2">
+                <label for="lorem-2"> Checkbox-2</label><br><br><br>
+
+                <label for="descr">Descripción:</label><br><br>
+                <textarea id="descr" name="descr" rows="4" cols="50" placeholder="Escribe aquí tu descripción..."></textarea>
+
+            </form>
+        </div>
+        </div>
+
+        <div class="botones-accion">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-clear">Clear</button>
+        </div>
+
+
+
+     </main>
+
+
+     <footer>
+
+
+     </footer>
+</body>

@@ -30,7 +30,7 @@ document.getElementById("dividir").addEventListener("click", () => {
   const { n1, n2 } = obtenerValores();
 
   if (n2 === 0) {
-    mostrarResultado("No se puede dividir entre 0");
+    mostrarResultado("Nos pot divir entre 0 INDETERMINACIOOO");
     return;
   }
 

@@ -20,16 +20,12 @@ function handleClick (ev){
 }
 
 function saludar (string){
-//    const nombre = inputname.value
     saludo.innerHTML = ("Hola " + string)
-    
 }
 
 button.addEventListener("click" , handleClick)
 
 const nombreGuardado = localStorage.getItem("nombre");
-
-
 
 if (nombreGuardado) {
     inputname.value = nombreGuardado;

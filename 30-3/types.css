@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px; 
+    
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;    
+    max-width: 1200px;      
+    margin: 0 auto;         
+}
+
+
+.header-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-menu {
+    justify-content: flex-start;
+}
+
+
+.header-title {
+    flex: 2;
+    justify-content: center;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 1.5rem; 
+    font-family: 'Georgia', serif;
+    white-space: nowrap; 
+}
+
+.header-menu .icon {
+    height: 70px; 
+    width: auto;
+}
+
+.header-logo .pusheen {
+    height: 80px; 
+    width: auto;
+}
+
+
+.header-container {
+    min-height: 100px; 
+}
+
+@media (max-width: 600px) {
+    .header-title h1 {
+        font-size: 1.1rem; 
+    }
+    .logo-img {
+        height: 30px;
+    }
+}
+
+
+main {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.contenedor-forms {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.contenedor-forms div {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.botones-accion {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-submit { background-color: #007bff; color: white; }
+.btn-clear { background-color: #6c757d; color: white; }
+
+
+@media (max-width: 600px) {
+    .contenedor-forms {
+        flex-direction: column;
+    }
+}

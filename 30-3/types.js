@@ -15,8 +15,6 @@ function handleClick (ev){
     console.log(`El nombre es: ${name} ${apellido} y la fecha de nacimiento es: ${cumple}`);
     saludar(name);   
     localStorage.setItem("nombre",name)
-    
-    
 }
 
 function saludar (string){
@@ -31,3 +29,21 @@ if (nombreGuardado) {
     inputname.value = nombreGuardado;
      saludar(nombreGuardado)
 }
+
+
+
+// -------objeto---------
+
+
+const formData = {
+  name: "",
+  lastname: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+  gender: "",
+  birthday: "",
+  checkbox1: false,
+  checkbox2: false,
+  description: ""
+};

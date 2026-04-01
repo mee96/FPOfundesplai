@@ -52,3 +52,19 @@ if (datosGuardados) {
   
   saludar(datosParseados.name);
 }
+
+
+
+
+// 
+
+
+
+fetch("https://libros-ionic6-express-mongo.vercel.app/tests")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });

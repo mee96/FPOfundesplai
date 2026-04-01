@@ -1,0 +1,138 @@
+/* Importem una font més arrodonida i cute */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+  background-color: #fff5f8; /* Fons rosa molt claret */
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 40px; */
+  color: #555;
+}
+
+h1 {
+  color: #ff8fb1;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 30px;
+}
+
+/* Botó principal d'estil bombolla */
+#loadBtn {
+  background-color: #ffb7c5;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(255, 183, 197, 0.4);
+  margin-bottom: 40px;
+}
+
+#loadBtn:hover {
+  background-color: #ff8fb1;
+  transform: scale(1.05);
+}
+
+#loadBtn:active {
+  transform: scale(0.95);
+}
+
+/* Contenidor dels productes */
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* La card del producte (ara amb position relative!) */
+.product-box {
+  background: white;
+  border: 4px solid #ffe4e9; /* Vora gruixuda però suau */
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 30px; /* Molt arrodonit */
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  position: relative; /* Necessari per situar el badge dins */
+  overflow: hidden; /* Perquè res surti de la vora rodona */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Efecte en passar el ratolí */
+.product-box:hover {
+  transform: translateY(-10px);
+  border-color: #ffb7c5;
+  box-shadow: 0 12px 25px rgba(255, 183, 197, 0.3);
+}
+
+/* --- ESTILS DEL BADGE DE DESCOMPTE --- */
+.discount-badge {
+  position: absolute;
+  top: 15px; /* Separat de dalt */
+  right: 15px; /* Separat de la dreta */
+  background-color: #ff8fb1; /* Rosa fort */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px; /* Forma d'el·lipse */
+  font-size: 0.85rem;
+  font-weight: bold;
+  z-index: 10; /* Perquè estigui per sobre de la imatge */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Imatges boniques */
+.product-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ajusta la imatge sense deformar-la */
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.product-box h3 {
+  font-size: 1.1rem;
+  color: #ff8fb1;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.product-box .price {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #777;
+  background: #fff0f3;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* Botó "Afegir" dins de la card */
+.add-to-cart-btn {
+  background-color: #b7e4c7; /* Verd pastís */
+  color: #2d6a4f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  font-family: 'Quicksand', sans-serif;
+  margin-top: auto; /* L'empeny cap a baix del tot */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #95d5b2;
+  transform: scale(1.05);
+}

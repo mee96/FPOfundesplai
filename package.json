@@ -1,0 +1,22 @@
+{
+  "name": "fpofundesplai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mee96/FPOfundesplai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mee96/FPOfundesplai/issues"
+  },
+  "homepage": "https://github.com/mee96/FPOfundesplai#readme",
+  "dependencies": {
+    "typescript": "^6.0.2"
+  }
+}
